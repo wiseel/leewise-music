@@ -8,11 +8,11 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white selection:bg-white/20 overflow-x-hidden flex flex-col relative">
       {/* Background with texture */}
       <div 
-        className="fixed inset-0 z-0 bg-cover bg-top bg-no-repeat opacity-70"
+        className="fixed inset-0 z-0 bg-cover bg-top bg-no-repeat opacity-90"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
       <div className="fixed inset-0 z-0 bg-noise pointer-events-none mix-blend-overlay opacity-50" />
-      <div className="fixed inset-0 z-0 bg-gradient-to-b from-transparent via-black/60 to-black" />
+      <div className="fixed inset-0 z-0 bg-gradient-to-b from-transparent via-black/40 to-black" />
 
       {/* Main Content */}
       <main className="relative z-10 flex-grow flex flex-col items-center justify-center px-6 pt-32 pb-24 max-w-4xl mx-auto w-full">
