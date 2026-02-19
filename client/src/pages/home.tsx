@@ -8,7 +8,7 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white selection:bg-white/20 overflow-x-hidden flex flex-col relative">
       {/* Background with texture */}
       <div 
-        className="fixed inset-0 z-0 bg-cover bg-top bg-no-repeat opacity-90"
+        className="fixed inset-0 z-0 bg-cover bg-top bg-no-repeat opacity-90 scale-90 origin-top"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
       <div className="fixed inset-0 z-0 bg-noise pointer-events-none mix-blend-overlay opacity-50" />
