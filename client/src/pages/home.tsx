@@ -1,5 +1,5 @@
 import { Play, Disc3, Music, Youtube, Instagram } from "lucide-react";
-import heroBg from "../assets/images/bg-hero.png";
+import heroBg from "@assets/013014ED-A2FA-45F2-A2E7-591A5043464E_1771534611777.png";
 
 export default function Home() {
   const VIDEO_ID = "dQw4w9WgXcQ"; // Placeholder video
@@ -8,11 +8,11 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white selection:bg-white/20 overflow-x-hidden flex flex-col relative">
       {/* Background with texture */}
       <div 
-        className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40 mix-blend-screen"
+        className="fixed inset-0 z-0 bg-cover bg-top bg-no-repeat opacity-70"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
-      <div className="fixed inset-0 z-0 bg-noise pointer-events-none mix-blend-overlay" />
-      <div className="fixed inset-0 z-0 bg-gradient-to-b from-transparent via-black/80 to-black" />
+      <div className="fixed inset-0 z-0 bg-noise pointer-events-none mix-blend-overlay opacity-50" />
+      <div className="fixed inset-0 z-0 bg-gradient-to-b from-transparent via-black/60 to-black" />
 
       {/* Main Content */}
       <main className="relative z-10 flex-grow flex flex-col items-center justify-center px-6 pt-32 pb-24 max-w-4xl mx-auto w-full">
