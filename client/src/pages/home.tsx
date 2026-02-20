@@ -23,7 +23,7 @@ export default function Home() {
             Lee Wise
           </h1>
           <p className="font-sans text-xl md:text-2xl text-white/60 tracking-widest uppercase font-light" data-testid="text-subtitle">
-            Indie Rock • Pop • Folk • Blues
+            Indie • Rock • Folk • Blues
           </p>
         </section>
 
