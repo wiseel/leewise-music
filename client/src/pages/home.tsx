@@ -19,7 +19,7 @@ export default function Home() {
         
         {/* Hero Section */}
         <section className="flex flex-col items-center text-center space-y-6 mb-24 animate-in slide-in-from-bottom-8 duration-1000 ease-out fill-mode-both">
-          <h1 className="font-sans text-7xl md:text-9xl font-bold tracking-tighter text-glow" data-testid="text-title">
+          <h1 className="font-sans text-7xl md:text-9xl tracking-tighter text-glow" data-testid="text-title">
             Lee Wise
           </h1>
           <p className="font-sans text-xl md:text-2xl text-white/60 tracking-widest uppercase font-light" data-testid="text-subtitle">
