@@ -34,7 +34,7 @@ export default function Home() {
             <LinkButton icon={<Play className="w-5 h-5" />} label="Spotify" href="#" testId="link-spotify" />
             <LinkButton icon={<Music className="w-5 h-5" />} label="Apple Music" href="#" testId="link-apple-music" />
             <LinkButton icon={<Youtube className="w-5 h-5" />} label="YouTube" href="https://youtube.com/@LeeWiseArt" testId="link-youtube" />
-            <LinkButton icon={<Disc3 className="w-5 h-5" />} label="TikTok" href="#" testId="link-tiktok" />
+            <LinkButton icon={<Disc3 className="w-5 h-5" />} label="TikTok" href="https://tiktok.com/@leewiseart" testId="link-tiktok" />
             <LinkButton icon={<Instagram className="w-5 h-5" />} label="Instagram" href="https://instagram.com/leewiseart" testId="link-instagram" />
           </div>
         </section>
