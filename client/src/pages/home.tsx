@@ -33,9 +33,9 @@ export default function Home() {
           <div className="flex flex-col w-full max-w-sm space-y-3">
             <LinkButton icon={<Play className="w-5 h-5" />} label="Spotify" href="#" testId="link-spotify" />
             <LinkButton icon={<Music className="w-5 h-5" />} label="Apple Music" href="#" testId="link-apple-music" />
-            <LinkButton icon={<Youtube className="w-5 h-5" />} label="YouTube" href="#" testId="link-youtube" />
+            <LinkButton icon={<Youtube className="w-5 h-5" />} label="YouTube" href="https://youtube.com/@LeeWiseArt" testId="link-youtube" />
             <LinkButton icon={<Disc3 className="w-5 h-5" />} label="TikTok" href="#" testId="link-tiktok" />
-            <LinkButton icon={<Instagram className="w-5 h-5" />} label="Instagram" href="#" testId="link-instagram" />
+            <LinkButton icon={<Instagram className="w-5 h-5" />} label="Instagram" href="https://instagram.com/leewiseart" testId="link-instagram" />
           </div>
         </section>
 
