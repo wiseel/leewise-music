@@ -1,11 +1,17 @@
 import { Play, Disc3, Music, Youtube, Instagram } from "lucide-react";
 import heroBg from "@assets/013014ED-A2FA-45F2-A2E7-591A5043464E_1771534611777.png";
+import logoImg from "@assets/E54A26F4-5074-41C5-B1A6-91FEF2F9F5AE_1771717152762.png";
 
 export default function Home() {
   const VIDEO_ID = "dQw4w9WgXcQ"; // Placeholder video
 
   return (
     <div className="min-h-screen bg-black text-white selection:bg-white/20 overflow-x-hidden flex flex-col relative">
+      {/* Logo */}
+      <div className="absolute top-6 left-6 md:top-8 md:left-8 z-50 animate-in fade-in duration-1000">
+        <img src={logoImg} alt="Lee Wise Logo" className="w-16 h-16 md:w-24 md:h-24 object-contain" />
+      </div>
+
       {/* Background with texture */}
       <div 
         className="fixed inset-0 z-0 bg-cover bg-top bg-no-repeat opacity-90 scale-90 origin-top"
