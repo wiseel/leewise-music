@@ -63,6 +63,38 @@ export default function Home() {
             ></iframe>
           </div>
         </section>
+
+        {/* Mailing List Section */}
+        <section className="w-full flex flex-col items-center space-y-6 mt-32 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-700 ease-out fill-mode-both">
+          <h2 className="font-serif text-3xl md:text-4xl italic text-white/80" data-testid="text-mailing-list">
+            Join the mailing list
+          </h2>
+          <form 
+            action="https://app.kit.com/forms/9120995/subscriptions" 
+            method="POST"
+            className="flex flex-col w-full max-w-sm space-y-4"
+            data-testid="form-mailing-list"
+          >
+            <input 
+              type="email" 
+              name="email_address" 
+              placeholder="Your email address" 
+              required 
+              className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-lg text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all"
+              data-testid="input-email"
+            />
+            <button 
+              type="submit" 
+              className="w-full px-6 py-4 bg-white text-black font-medium rounded-lg hover:bg-white/90 transition-colors"
+              data-testid="button-subscribe"
+            >
+              Subscribe
+            </button>
+            <p className="text-xs text-white/40 text-center tracking-wide" data-testid="text-mailing-list-helper">
+              No spam. Unsubscribe anytime.
+            </p>
+          </form>
+        </section>
       </main>
 
       {/* Footer */}
