@@ -1,6 +1,6 @@
 import { Play, Disc3, Music, Youtube, Instagram } from "lucide-react";
-import heroBg from "@assets/013014ED-A2FA-45F2-A2E7-591A5043464E_1771534611777.png";
-import logoImg from "@assets/E54A26F4-5074-41C5-B1A6-91FEF2F9F5AE_1771717152762.png";
+const heroBg = "/logo.png";
+const logoImg = "/logo-mark.png";
 
 export default function Home() {
   const VIDEO_ID = "dQw4w9WgXcQ"; // Placeholder video
