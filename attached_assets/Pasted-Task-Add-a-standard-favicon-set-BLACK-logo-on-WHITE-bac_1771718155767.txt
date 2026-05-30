@@ -1,0 +1,59 @@
+Task: Add a standard favicon set (BLACK logo on WHITE background) to my website with ZERO reliance on Replit (no auth, no Replit storage/hosting). All files must live in the GitHub repo and work the same on GitHub Pages and Fly.io.
+
+Goal:
+
+* Use a black-on-white favicon (so it stays visible in browser tabs).
+* Support desktop + mobile icons (iOS + Android/PWA).
+
+1. Create/confirm static folder:
+
+* Next.js / Vite / most setups: use /public
+* Express: use /public and serve it with express.static
+
+2. Add favicon files to /public (root):
+
+* favicon.ico
+* favicon-16x16.png
+* favicon-32x32.png
+* apple-touch-icon.png (180x180, black mark on white)
+* android-chrome-192x192.png (black mark on white)
+* android-chrome-512x512.png (black mark on white)
+* site.webmanifest
+
+All these files must be committed to GitHub and served locally/by Fly normally (no external URLs).
+
+3. Add these tags to the site <head>:
+
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+Where to place <head> tags:
+
+* Next.js App Router: app/layout.tsx inside <head>
+* Next.js Pages Router: pages/_document.tsx inside <Head>
+* Vite/vanilla: index.html inside <head>
+
+4. GitHub Pages subpath compatibility:
+   If the site is served from a repo subpath (https://user.github.io/repo/), root-relative “/favicon…” may 404.
+   Fix using ONE of these:
+   A) Use relative paths (no leading slash):
+   href="favicon.ico", href="favicon-32x32.png", href="site.webmanifest", etc.
+   B) Configure framework base path (Next basePath / Vite base) so “/” resolves correctly.
+
+5. Verify (no Replit dependencies):
+
+* Locally: confirm these return 200:
+  /favicon.ico
+  /favicon-32x32.png
+  /apple-touch-icon.png
+  /site.webmanifest
+* In production on BOTH GitHub Pages and Fly.io: confirm the same URLs (or correct subpath equivalents) return 200 and the favicon shows in the browser tab.
+
+Output required:
+
+* Exact file paths used for the favicon files
+* Exact file edited to add <head> tags
+* Note whether you used root-relative or relative paths to support GitHub Pages
