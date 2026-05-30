@@ -155,6 +155,9 @@ export default function Home() {
         >
           Visual art: leewise.art
         </a>
+        <p className="text-xs text-white/20 uppercase tracking-[0.2em] mt-2" data-testid="text-credit">
+          Website by Wise Made
+        </p>
       </footer>
     </div>
   );
