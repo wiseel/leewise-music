@@ -3,7 +3,7 @@ const heroBg = "/logo.png";
 const logoImg = "/logo-mark.png";
 
 export default function Home() {
-  const VIDEO_ID = "dQw4w9WgXcQ"; // Placeholder video
+  const VIDEO_ID = "mDRFjBstrUs";
 
   return (
     <div className="min-h-screen bg-black text-white selection:bg-white/20 overflow-x-hidden flex flex-col relative">
